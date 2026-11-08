@@ -207,5 +207,13 @@ window.submitInterest = async function(e) {
     }
 }
 
+// Toggle mobile navigation menu
+window.toggleMobileMenu = function() {
+    const menu = document.getElementById('mobileMenu');
+    if (menu) {
+        menu.classList.toggle('hidden');
+    }
+}
+
 // Initialize on Load
 initApp();
